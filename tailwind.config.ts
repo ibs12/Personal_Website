@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
       keyframes: {
         gradientPulse: {
           '0%, 100%': {
