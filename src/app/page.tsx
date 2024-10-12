@@ -6,7 +6,7 @@ import Navbar from './navbar';
 import Highlights from './highlights';
 import Projects from './projects';
 import Experience from './experience';
-import Credentials from './credentials';
+import Contact from './contact';
 import { useEffect, useState, RefObject, useRef } from "react";
 
 
@@ -47,10 +47,16 @@ export default function App() {
   const ref5 = useRef<HTMLDivElement>(null);
   const isVisible5 = useIsVisible(ref5); 
 
+  
+
+
+
   return (
+    
     <div className="App">
-      {/* <Navbar /> */}
-      <>
+
+        <Navbar />
+        <>
         <div ref={ref1} className={`transition-opacity ease-in duration-700 ${isVisible1 ? "opacity-100" : "opacity-0"}`}>
           <><Home /></>
         </div>
@@ -64,9 +70,9 @@ export default function App() {
           <><Experience /></>
         </div>
         <div ref={ref5} className={`transition-opacity ease-in duration-700 ${isVisible5 ? "opacity-100" : "opacity-0"}`}>
-          <><Credentials /></>
+          <><Contact /></>
         </div>
-      </>
+        </>
     </div>
 
 

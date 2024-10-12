@@ -1,70 +1,50 @@
+import React from 'react';
+import profileImage from '../../assets/profileImage.png';
+import StarField from './starField';
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
- import React from 'react';
+const Home = () => {
+  return (
+    <>
+      <div className="absolute inset-0 z-0 overflow-hidden">
+          <StarField />
+      </div>
 
- function Home() {
-   return (
-    <div>
-      <div className="grid grid-cols-1  justify center items-center">
-      <nav className="nav hidden lg:block grid-span-1" aria-label="In-page jump links">
-        <ul className="mt-16 w-max">
-          <li>
-            <a className="group flex items-center py-3" href="#about">
-              <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
-              </span>
-              <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                About
-              </span>
-            </a>
-          </li>
-          <li>
-            <a className="group flex items-center py-3 active" href="#experience">
-              <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
-              </span>
-              <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                Experience
-              </span>
-            </a>
-          </li>
-          <li>
-            <a className="group flex items-center py-3" href="#projects">
-              <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none">
-              </span>
-              <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
-                Projects
-              </span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-       <div className="flex h-screen justify-center items-center">
-         <div>
-           <h1 className ="Helvetica text-5xl font-semibold tracking-wide text-white">Ibrahim Allahbuksh</h1>
-           <span className ="Helvetica text-xl tracking-wide text-center text-[#cdcdcd]">Software Engineer</span>
-         </div>
-         </div>
-       </div>
-   );
- }
-export default Home;
+      <div id="home" className="relative flex justify-end items-center space-x-8 pt-10 pr-32 overflow-hidden">
 
-/*
-Glow
+        <a href="https://github.com/ibs12" className="flex items-center space-x-3 z-10 relative">
+            <FaGithub size={35} color={"white"} />
+        </a>
+        <a href="https://www.linkedin.com/in/iallahbu/" className="flex items-center space-x-3 z-10 relative">
+            <FaLinkedin size={35} color={"white"} />
+        </a>
+      </div>
 
     
-  <div className="flex h-screen justify-center items-center bg-black">
+    <div id= "about" className="flex flex-col h-screen items-center relative overflow-hidden">
+      {/* <div className="absolute inset-0 z-0">
+        <StarField />
+      </div> */}
 
-    <div className="absolute inset-0 border animate-gradientPulse"></div>
-
-
-    <div className="relative z-10 text-center">
-      <h1 className="Helvetica text-5xl font-semibold tracking-wide text-white">
-        Ibrahim Allahbuksh
-      </h1>
-      <span className="Helvetica text-xl tracking-wide text-[#cdcdcd]">
-        Software Engineer
-      </span>
+      <div  className="relative z-10 flex flex-col justify-center items-center"> {/* Ensure it's a flex container */}
+        <div
+          className="h-52 w-52 mb-10 mt-20 hover:scale-110 transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[130px]"
+          style={{ backgroundImage: `url(${profileImage.src})` }}
+        ></div>
+        <h1 className="Helvetica text-5xl font-extralight tracking-wide text-white text-center">Ibrahim Allahbuksh</h1>
+        <p className="Helvetica text-2xl tracking-wide text-center bg-gradient-to-r from-blue-700 via-purple-500 to-pink-600 bg-clip-text text-transparent pt-1">Software Engineer</p>
+        <p className="Helvetica w-1/3 mx-auto text-lg font-semibold tracking-wide text-center text-[#cdcdcd] pt-10">
+          Software engineer with a passion for building full stack applications that solve real-world problems. With experience across both front-end and back-end development, I bring expertise in technologies like React, Node.js, Python, and PostgreSQL.
+        </p>
+        <p className="Helvetica w-1/3 mx-auto text-lg font-semibold tracking-wide text-center text-[#cdcdcd] pt-10">
+          My work spans from developing web apps to leveraging data for insightful analytics, with a focus on clean, scalable solutions. I thrive in collaborative environments and am always eager to learn and contribute to innovative projects. Let’s connect and explore how I can bring value to your team!
+        </p>
+      </div>
     </div>
-  </div>
 
-*/
+    </>
+  );
+}
+
+export default Home;

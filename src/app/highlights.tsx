@@ -14,21 +14,18 @@ import nextJSImage from "../../assets/nextjs-icon-light-background.png";
 import pandasImage from "../../assets/pandas_mark.svg";
 import tailWindsImage from "../../assets/tailwindcssLogo.svg";
 
-import { FaArrowLeft } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
 
-import { useEffect, useRef } from 'react';
 
 
 function Highlights() {
    console.log(pythonImage);
 
-   function scrollToSection(sectionId: string) {
-      const targetSection = document.getElementById(sectionId);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
+   // function scrollToSection(sectionId: string) {
+   //    const targetSection = document.getElementById(sectionId);
+   //    if (targetSection) {
+   //      targetSection.scrollIntoView({ behavior: 'smooth' });
+   //    }
+   //  }
     
     
 
@@ -76,8 +73,8 @@ function Highlights() {
                                  { name: "Tailwind", image: tailWindsImage.src },
                               ].map((skill, index) => (
 
-                                 <div className="flex flex-col group justify-center items-center transition-transform transform hover:scale-105">
-                                    <div key={index} className="size-24 p-2 bg-black rounded-[20px] mb-3 group-hover:scale-110 transition ease-in-out delay-50 duration-300 drop-shadow-md group-hover:animate-gradientPulse shadow-lg group-hover:shadow-2xl group-hover:translate-y-[-5px] border-2 border-gray-300 mt-5">
+                                 <div key={index} className="flex flex-col group justify-center items-center transition-transform transform hover:scale-105">
+                                    <div  className="size-24 p-2 bg-black rounded-[20px] mb-3  transition ease-in-out delay-50 duration-300 drop-shadow-md group-hover:animate-gradientPulse shadow-lg group-hover:shadow-2xl group-hover:translate-y-[-5px] border-2 border-gray-300 mt-5">
                                        
                                        {/* Image container */}
                                        <div className="w-full h-full bg-no-repeat bg-contain bg-center rounded-[15px] mb-3" 
@@ -133,7 +130,7 @@ function Highlights() {
                               ].map((project, index) => (
 
                                  <div key={index} className="grid justify-center items-center group transition-transform transform hover:scale-105">
-                                    <div className = "w-[20vw] h-[50vh] p-2 bg-black rounded-[20px] group-hover:scale-110 transition ease-in-out delay-50 duration-300 drop-shadow-md group-hover:animate-gradientPulse shadow-lg group-hover:shadow-2xl group-hover:translate-y-[-5px]   mt-5">
+                                    <div className = "w-[20vw] h-[50vh] p-2 bg-black rounded-[20px]  transition ease-in-out duration-300 drop-shadow-md group-hover:animate-gradientPulse mt-5">
                                     <div className="w-full h-full bg-no-repeat bg-contain bg-center rounded-[15px] "
                                           // style={{ backgroundImage: `url(${project.image})` }}
                                           >
@@ -166,9 +163,8 @@ function Highlights() {
                               ].map((project, index) => (
 
                                  <div key={index} className="grid justify-center items-center group transition-transform transform hover:scale-105">
-                                    <div className = "w-[20vw] h-[50vh] p-2 bg-black rounded-[20px] group-hover:scale-110 transition ease-in-out delay-50 duration-300 drop-shadow-md group-hover:animate-gradientPulse shadow-lg group-hover:shadow-2xl group-hover:translate-y-[-5px] ">
+                                    <div className = "w-[20vw] h-[50vh] p-2 bg-black rounded-[20px] transition ease-in-out  duration-300 drop-shadow-md group-hover:animate-gradientPulse ">
                                     <div className="w-full h-full bg-no-repeat bg-contain bg-center rounded-[15px] "
-                                          // style={{ backgroundImage: `url(${project.image})` }}
                                           >
                                        <span className="text-4xl font-semibold tracking-wide text-white group-hover:scale-110 transition ease-in-out delay-50 duration-300  ">
                                              {project.role}

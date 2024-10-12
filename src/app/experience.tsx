@@ -6,7 +6,7 @@ import TeslaLogo from "../../assets/TeslaLogo.png";
 
 function Experience() {
     return (
-        <div className = "bg-black">
+        <div id="experience" className = "bg-black">
             <div className="flex justify-center ">
                 <div className = "bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500 bg-clip-text text-transparent font-bold text-9xl pb-6 pt-20">Experience</div>
             </div>
@@ -26,7 +26,7 @@ function Experience() {
                                     </div>
                                 </div>
                                 <p className = "text-neutral-500 ml-5">___________</p>
-                                <p className = "Helvetica text-2xl font-extralight tracking-wide text-neutral-500 ml-5">Feb 2022 - Jun 2024</p>
+                                <p className = "Helvetica text-2xl font-extralight tracking-wide text-neutral-500 ml-5">Jul 2024 - Sep 2024</p>
                             </div>
                         </div>
                         <div className="grid grid-cols-3 grid-rows-1 gap-4">
@@ -143,3 +143,5 @@ function Experience() {
 }
 
 export default Experience;
+
+
