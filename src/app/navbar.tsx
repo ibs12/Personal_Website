@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
   // Function to determine the current active section based on scroll position
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'experience', 'projects'];
+      const sections = ['about', 'experience', 'projects', 'contact'];
       const offsetY = window.scrollY;
       const buffer = 100; // Adjust this to fine-tune when sections become "active"
 
@@ -192,6 +192,7 @@ const Navbar: React.FC = () => {
               Contact
             </span>
           </a>
+
           </li>
         </ul>
       </nav>

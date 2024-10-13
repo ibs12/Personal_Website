@@ -55,7 +55,7 @@ const StarField: React.FC = () => {
     }
 
     // Set warp speed to 1 when the component mounts
-    let warpSpeed = 5;
+    let warpSpeed = 1;
 
     app.ticker.add((ticker: Ticker) => {
       const delta = ticker.deltaTime
@@ -87,7 +87,7 @@ const StarField: React.FC = () => {
     // Optionally, reset warpSpeed after a short duration
     setTimeout(() => {
       warpSpeed = 0; // Stop the warp after a few seconds
-    }, 1000);
+    }, 500);
   };
 
   return <div id="starfield" style={{ width: '100%', height: '100%' }} />; // Ensure the div can expand to fit the app

@@ -7,7 +7,7 @@ import newsSearch from '../../assets/NewsSearchResult.png';
 import newsHome from '../../assets/NewsHome.png';
 import trekPoster from '../../assets/TrekPoster.png';
 import recommendedProfessors from '../../assets/RecommendedProfessors.gif';
-import rateProfessorStats from '../../assets/RateProfessorStats.gif';
+import rateProfessorStats from '../../assets/rateProfessorStats.gif';
 
 import { FaGithub } from "react-icons/fa";
 import { FaTrello } from "react-icons/fa";
