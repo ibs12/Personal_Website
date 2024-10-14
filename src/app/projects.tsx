@@ -121,8 +121,8 @@ function Projects() {
                             <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-[#405644] bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${trekPoster.src})` }}></div>
                         </div>
                         <div className=" col-span-1 flex flex-col space-y-5">
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 hover:translate-y-[-5px] hover:translate-x-[-5px] bg-[#405644] bg-no-repeat bg-cover bg-center rounded-[20px] group-hover:scale-110" style={{ backgroundImage: `url(${hikeLogin.src})` }}></div>
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 hover:translate-y-[-5px] hover:translate-x-[-5px] bg-[#405644] bg-no-repeat bg-contain bg-center rounded-[20px] group-hover:scale-110" style={{ backgroundImage: `url(${hikeGallery.src})` }}></div>
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${hikeLogin.src})` }}></div>
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${hikeGallery.src})` }}></div>
                         </div>
                     </div>
                 </div>
@@ -171,8 +171,8 @@ function Projects() {
                             <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-cover bg-center rounded-[20px] group-hover:scale-110 shadow-lg" style={{ backgroundImage: `url(${newsHome.src})` }}></div>
                         </div>
                         <div className="row-span-2 col-span-1 flex flex-col space-y-5">
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 hover:translate-y-[-5px] hover:translate-x-[-5px] bg-no-repeat bg-cover bg-center rounded-[20px] group-hover:scale-110" style={{ backgroundImage: `url(${newsMarket.src})` }}></div>
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 hover:translate-y-[-5px] hover:translate-x-[-5px] bg-no-repeat bg-cover bg-center rounded-[20px] group-hover:scale-110" style={{ backgroundImage: `url(${newsSearch.src})` }}></div>
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 hover:translate-y-[-5px] hover:translate-x-[-5px] bg-no-repeat bg-contain bg-center rounded-[20px] group-hover:scale-110" style={{ backgroundImage: `url(${newsMarket.src})` }}></div>
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 hover:translate-y-[-5px] hover:translate-x-[-5px] bg-no-repeat bg-contain bg-center rounded-[20px] group-hover:scale-110" style={{ backgroundImage: `url(${newsSearch.src})` }}></div>
                         </div>
                     </div>
                 </div>
