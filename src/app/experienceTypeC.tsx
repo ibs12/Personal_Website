@@ -31,8 +31,8 @@ function Experience() {
                         </div>
                         <div className="grid grid-cols-3 grid-rows-1 gap-4">
                             <div className="flex justify-center items-center row-span-1 col-span-3">
-                                <div className= "pt-11 ">
-                                    <h2 className = "Helvetica text-xl font-semibold subpixel-antialiased tracking-wide  text-gray-400 ml-5 mt-7">
+                                <div className= "pt-10 pb-10">
+                                    <h2 className = "Helvetica text-xl font-semibold subpixel-antialiased tracking-wide text-gray-400 ml-5 mt-7 ">
                                     <>
                                      Developed proficiency in Python and various data science libraries to perform comprehensive <span style={{ color: "white" }}> sentiment analysis on
                                    consumer reviews</span>.
@@ -71,7 +71,7 @@ function Experience() {
                         </div>
                         <div className="grid grid-cols-3 grid-rows-1">
                             <div className="flex justify-center items-center row-span-1 col-span-3 ">
-                                <div className= "pt-11 ">
+                                <div className= "pt-10 pb-10 ">
                                     <h2 className = "Helvetica text-xl font-semibold tracking-wide text-pretty text-gray-400 ml-5 mt-7">
                                     <>
                                     <span style={{ color: "white" }}>Resolved 100+ technical issues</span> weekly, including software, and networking problems <span style={{ color: "white" }}>for clients</span>, ensuring swift and
@@ -112,7 +112,7 @@ function Experience() {
                         </div>
                         <div className="grid grid-cols-3 grid-rows-1 gap-4">
                             <div className="flex justify-center items-center row-span-1 col-span-3">
-                                <div className= "pt-11 ">
+                                <div className= "pt-10 pb-10">
                                     <h2 className = "Helvetica text-xl font-semibold tracking-wide text-pretty text-gray-400 ml-5 mt-7">
                                     <>
                                     Utilized an autopilot labeling interface to <span style={{ color: "white" }}>train deep neural networks</span>  by accurately labeling hundreds of images

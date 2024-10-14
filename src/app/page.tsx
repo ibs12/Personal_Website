@@ -12,6 +12,26 @@ import { useEffect, useState, RefObject, useRef } from "react";
 import Head from 'next/head';
 
 
+const useMediaQuery = (query: string) => {
+  const [matches, setMatches] = React.useState(false);
+
+  useEffect(() => {
+    // Check if window is defined (only run on the client)
+    if (typeof window !== "undefined") {
+      const mediaQueryList = window.matchMedia(query);
+      setMatches(mediaQueryList.matches);
+
+      const documentChangeHandler = () => setMatches(mediaQueryList.matches);
+      mediaQueryList.addEventListener('change', documentChangeHandler);
+
+      return () => {
+        mediaQueryList.removeEventListener('change', documentChangeHandler);
+      };
+    }
+  }, [query]);
+
+  return matches;
+};
 
 export default function App() {
   
@@ -49,20 +69,8 @@ export default function App() {
   const ref5 = useRef<HTMLDivElement>(null);
   const isVisible5 = useIsVisible(ref5); 
 
-  const useMediaQuery = (query: string) => {
-    const [matches, setMatches] = React.useState(window.matchMedia(query).matches);
 
-    React.useEffect(() => {
-        const mediaQueryList = window.matchMedia(query);
-        const documentChangeHandler = () => setMatches(mediaQueryList.matches);
-
-        mediaQueryList.addEventListener('change', documentChangeHandler);
-        return () => mediaQueryList.removeEventListener('change', documentChangeHandler);
-    }, [query]);
-
-    return matches;
-};
-const isSmallScreen = useMediaQuery('(max-width: 767px)');
+  const isSmallScreen = useMediaQuery('(max-width: 767px)');
 
 
 
