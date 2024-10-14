@@ -27,8 +27,8 @@ function Projects() {
         {/* First Project Section */}
         <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="space-y-4">
-                <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white ">
-                    Professor Recommendation App
+                <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white  ">
+                    Professor Recommender App
                 </h2>
                 <p className="text-neutral-500">______________________________</p>
                 <div className="text-wrap pr-10">
