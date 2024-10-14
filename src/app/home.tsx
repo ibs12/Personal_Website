@@ -3,7 +3,6 @@ import profileImage from '../../assets/profileImage.png';
 import StarField from './starField';
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-import Highlights from './highlights';
 
 const Home = () => {
   return (
