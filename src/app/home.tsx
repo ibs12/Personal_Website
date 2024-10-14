@@ -35,11 +35,11 @@ const Home = () => {
           <p className="text-xl sm:text-2xl bg-gradient-to-r from-blue-700 via-purple-500 to-pink-600 bg-clip-text text-transparent pt-1">Software Engineer</p>
 
           {/* Descriptions */}
-          <p className="w-full sm:w-2/3 lg:w-1/2 mx-auto text-sm sm:text-lg font-semibold tracking-wide text-[#cdcdcd] pt-6 sm:pt-10">
+          <p className="w-11/12 sm:w-2/3 lg:w-1/2 mx-auto text-sm sm:text-lg font-semibold tracking-wide text-[#cdcdcd] pt-6 sm:pt-10">
             Software engineer with a passion for building full stack applications that solve real-world problems. With experience across both front-end and back-end development, I bring expertise in technologies like React, Node.js, Python, and PostgreSQL.
           </p>
-          <p className="w-full sm:w-2/3 lg:w-1/2 mx-auto text-sm sm:text-lg font-semibold tracking-wide text-[#cdcdcd] pt-6 sm:pt-10">
-            My work spans from developing web apps to leveraging data for insightful analytics, with a focus on clean, scalable solutions. I thrive in collaborative environments and am always eager to learn and contribute to innovative projects. Let’s connect and explore how I can bring value to your team!
+          <p className="w-11/12 sm:w-2/3 lg:w-1/2 mx-auto text-sm sm:text-lg font-semibold tracking-wide text-[#cdcdcd] pt-6 sm:pt-10">
+            My work spans from -developing web apps to leveraging data for insightful analytics, with a focus on clean, scalable solutions. I thrive in collaborative environments and am always eager to learn and contribute to innovative projects. Let’s connect and explore how I can bring value to your team!
           </p>
         </div>
       </div>

@@ -54,13 +54,13 @@ function Projects() {
                 <div className="flex flex-wrap space-x-2 md:pl-1 pb-4">
                     <a href="https://github.com/ibs12/rate-professors-app" className="flex items-center space-x-2 pl-1">
                         <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
-                            <FaGithub size={40} />
+                            <FaGithub size={40} color={"black"} />
                         </div>
                         <p className="text-white font-semibold content-center pr-3">Github</p>
                     </a>
 
                     <div className="rounded-[10px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
-                        <FaTrello size={40} />
+                        <FaTrello size={40} color={"black"}/>
                     </div>
                     <p className="text-white font-semibold content-center">Trello</p>
                 </div>
@@ -104,13 +104,13 @@ function Projects() {
                         <div className="flex flex-wrap space-x-2 pl-1">
                             <a href="https://github.com/ibs12/Hiking-Social-Media-App" className="flex space-x-2 pl-1">
                                 <div className="rounded-[30px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500">
-                                    <FaGithub size={40} />
+                                    <FaGithub size={40} color={"black"} />
                                 </div>
                                 <p className="text-white font-semibold content-center pr-3">Github</p>
                             </a>
                             <a href="https://github.com/ibs12/Hiking-Social-Media-App" className="flex space-x-2 pl-1">
                                 <div className="rounded-[10px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500">
-                                    <FaTrello size={40} />
+                                    <FaTrello size={40} color={"black"} />
                                 </div>
                                 <p className="text-white font-semibold content-center">Trello</p>
                             </a>
@@ -164,7 +164,7 @@ function Projects() {
 
                         <a href="https://github.com/ibs12/News-Analysis" className="flex space-x-2 pl-1">
                             <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500">
-                                <FaGithub size={40} />
+                                <FaGithub size={40} color={"black"}/>
                             </div>
                             <p className="text-white font-semibold content-center">Github</p>
                         </a>

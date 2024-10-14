@@ -58,7 +58,6 @@ function Experience() {
     <h1 className="text-center text-7xl md:text-9xl lg:text-9xl font-bold pb-6 pt-20 md:pt-16 bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500 bg-clip-text text-transparent ">
         Experience
     </h1>
-    {/* Increased max width */}
     <div className="max-w-5xl mx-auto">
         {experiences.map((exp, index) => (
             <div key={index} className="mb-16 border-l-2 border-gray-600 pl-8">
@@ -70,7 +69,7 @@ function Experience() {
                         width={96}
                         height={96}
                     />
-                    <div className="md:mr-5"> {/* Added margin on the right */}
+                    <div className="md:mr-5">
                         <h2 className="text-xl md:text-2xl font-semibold text-white">{exp.role}</h2>
                         <p className="text-lg md:text-xl font-light text-neutral-500">{exp.company}</p>
                         <p className="text-lg md:text-xl font-light text-neutral-500 mt-2">{exp.period}</p>

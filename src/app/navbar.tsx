@@ -5,6 +5,22 @@ const Navbar: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('about');
   const [isNavVisible, setIsNavVisible] = useState<boolean>(true);
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsNavVisible(false);
+      } else {
+        setIsNavVisible(true);
+      }
+    };
+
+    // Set nav visibility based on screen size on initial render
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
 
 
   // Function to determine the current active section based on scroll position
@@ -12,7 +28,7 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       const sections = ['about', 'experience', 'projects', 'contact'];
       const offsetY = window.scrollY;
-      const buffer = 100; // Adjust this to fine-tune when sections become "active"
+      const buffer = 100; // Adjust  to fine-tune when sections become "active"
 
       const active = sections.find((section) => {
         const sectionElement = document.getElementById(section);
