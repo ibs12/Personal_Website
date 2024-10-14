@@ -34,6 +34,7 @@ function Projects() {
                 <div className="text-wrap pr-10">
                     <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
                         <li>Used agile methodology to create a web application for college students to rate professors and receive recommendations based on their learning styles as part of a Software Engineering course.</li>
+                        <li>Professor teaching styles are updated in MySQL database in real time as more reviews of a professor are given.</li>
                         <li>Wrote documentation such as acceptance tests, task tests, react.js guide in detail</li>
                     </ul>
                 </div>
