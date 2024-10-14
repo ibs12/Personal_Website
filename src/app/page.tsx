@@ -9,7 +9,13 @@ import Experience from './experience';
 import ExperienceTypeC from './experienceTypeC';
 import Contact from './contact';
 import { useEffect, useState, RefObject, useRef } from "react";
-import Head from 'next/head';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Ibrahim Allahbukhsh',
+  description: "Ibrahim Allahbukhsh's personal website showcasing his experience and skills as a software engineer",
+  metadataBase: new URL('https://ibrahimallahbukhsh.com/'),
+};
 
 
 const useMediaQuery = (query: string) => {
@@ -72,18 +78,14 @@ export default function App() {
 
   const isSmallScreen = useMediaQuery('(max-width: 767px)');
 
+ 
 
 
   return (
     
     <div className="App">
 
-      <Head>
-        <title>Ibrahim Allahbukhsh</title>
-        <meta name="description" content="Ibrahim Allahbukhsh's personal website showcasing his experience and skills as a software engineer." />
-        <meta name="keywords" content="software engineer, personal portfolio, personal website" />
-        <meta name="author" content="Ibrahim Allahbukhsh" />
-      </Head>
+
 
         <Navbar />
         <>
