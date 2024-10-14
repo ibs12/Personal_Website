@@ -20,90 +20,56 @@ import tailWindsImage from "../../assets/tailwindcssLogo.svg";
 function Highlights() {
    console.log(pythonImage);
 
-   // function scrollToSection(sectionId: string) {
-   //    const targetSection = document.getElementById(sectionId);
-   //    if (targetSection) {
-   //      targetSection.scrollIntoView({ behavior: 'smooth' });
-   //    }
-   //  }
-    
-    
 
-      // const containerRef = useRef<HTMLDivElement | null>(null);
-    
-      // useEffect(() => {
-      //   const container = containerRef.current;
-    
-      //   if (!container) return;
-    
-      //   const autoScroll = () => {
-      //     container.scrollBy({ left: 2300, behavior: 'smooth' });
-      //   };
-    
-      //   const scrollInterval = setInterval(autoScroll, 3000); // scrolls every 3 seconds
-    
-      //   return () => clearInterval(scrollInterval); // cleanup on unmount
-      // }, []);
   
    return (
       
-      <div className="bg-[#161617]">
-         <h1 className = "pt-20 pl-20 text-[#f5f5f7] text-5xl font-bold font-['Helvetica']">Get the highlights.</h1>
-         <div className="flex w-full relative overflow-x-auto overscroll-auto" >
-            <div className="space-x-5 pt-20 pb-20 w-max">
-               <div className="flex justify-center items-center">
-
-                  {/* First rectangle */} 
-                  <div id="section1" className="w-[70vw] h-[60vh] bg-black rounded-[30px] ml-56 pl-6 pt-6">
-                     <div className=''>
-                        <p className="text-white text-4xl font-bold mb-4 text-wide">Technologies</p>
-                           <div className="grid grid-rows-4 grid-cols-4 gap-4 justify-center items-center">
-                              {[
-                                 { name: "Python", image: pythonImage.src },
-                                 { name: "CSS", image: cssImage.src },
-                                 { name: "HTML", image: HTMLImage.src },
-                                 { name: "JavaScript", image: JSImage.src },
-                                 { name: "React", image: reactImage.src },
-                                 { name: "Node.js", image: nodeImage.src },
-                                 { name: "Docker", image: dockerImage.src },
-                                 { name: "Git", image: gitImage.src },
-                                 { name: "MySQL", image: mySQLImage.src },
-                                 { name: "Next.js", image: nextJSImage.src },
-                                 { name: "Pandas", image: pandasImage.src },
-                                 { name: "Tailwind", image: tailWindsImage.src },
-                              ].map((skill, index) => (
-
-                                 <div key={index} className="flex flex-col group justify-center items-center transition-transform transform hover:scale-105">
-                                    <div  className="size-24 p-2 bg-black rounded-[20px] mb-3  transition ease-in-out delay-50 duration-300 drop-shadow-md group-hover:animate-gradientPulse shadow-lg group-hover:shadow-2xl group-hover:translate-y-[-5px] border-2 border-gray-300 mt-5">
-                                       
-                                       {/* Image container */}
-                                       <div className="w-full h-full bg-no-repeat bg-contain bg-center rounded-[15px] mb-3" 
-                                             style={{ backgroundImage: `url(${skill.image})` }}>
-                                       </div>
-                                       
-                                       {/* Centered text */}
-                                       <div className="w-full flex justify-center">
-                                          <span className="text-2xl font-semibold tracking-wide text-center text-white group-hover:scale-110 transition ease-in-out delay-50 duration-300 drop-shadow-md">
-                                          {skill.name}
-                                          </span>
-                                       </div>
-                                       
-                                    </div>
-                                 </div>
-
-
-                              ))}
-                              {/* <div className="col-start-6 row-start-2 justify-self-center	"><FaArrowRight color={"white"}size={60}/></div> */}
-
-                           </div>
-                        </div>
+      <div className="md:bg-[#161617] min-h-screen">
+      <h1 className="hidden md:block pt-8 md:pt-20 px-4 md:px-20 text-[#f5f5f7] text-3xl md:text-5xl font-bold font-['Helvetica']">
+         Get the highlights.
+      </h1>
+      <div className="w-full overflow-x-auto">
+         <div className="space-y-8 md:space-y-0 md:space-x-5 py-8 md:py-20 min-w-max">
+            <div className="flex justify-center items-center">
+            <div id="section1" className="w-[90vw] h-auto md:w-[70vw] md:h-[60vh] md:ml-56 md:bg-black rounded-[30px] mx-4 md:mx-0 p-6 ">
+               <p className="text-white text-2xl md:text-4xl font-bold mb-4">Technologies</p>
+               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 justify-evenly ">
+                  {[
+                  { name: "Python", image: pythonImage.src },
+                  { name: "CSS", image: cssImage.src },
+                  { name: "HTML", image: HTMLImage.src },
+                  { name: "JavaScript", image: JSImage.src },
+                  { name: "React", image: reactImage.src },
+                  { name: "Node.js", image: nodeImage.src },
+                  { name: "Docker", image: dockerImage.src },
+                  { name: "Git", image: gitImage.src },
+                  { name: "MySQL", image: mySQLImage.src },
+                  { name: "Next.js", image: nextJSImage.src },
+                  { name: "Pandas", image: pandasImage.src },
+                  { name: "Tailwind", image: tailWindsImage.src },
+                  ].map((skill, index) => (
+                  <div key={index} className="flex flex-col group items-center transition-transform transform hover:scale-105">
+                     <div className="w-20 h-20 sm:w-24 sm:h-24 p-2 bg-black rounded-[20px] mb-3 transition ease-in-out delay-50 duration-300 drop-shadow-md group-hover:animate-gradientPulse shadow-lg group-hover:shadow-2xl group-hover:translate-y-[-5px] border-2 border-gray-300">
+                        <div
+                        className="w-full h-full bg-no-repeat bg-contain bg-center rounded-[15px] mb-3"
+                        style={{ backgroundImage: `url(${skill.image})` }}
+                        ></div>
                      </div>
+                     <span className="text-lg sm:text-xl font-semibold tracking-wide text-center text-white group-hover:scale-110 transition ease-in-out delay-50 duration-300 drop-shadow-md">
+                        {skill.name}
+                     </span>
+                  </div>
+                  ))}
+               </div>
+            </div>
+            
+
 
                   {/* Second rectangle */}
-                  <div id="section2" className="w-[70vw] h-[60vh] bg-black rounded-[30px] ml-5 pl-6 pt-6">
-                     <div>
-                        <p className="text-white text-4xl font-bold mb-4 text-wide">Projects</p>
-                           <div className="grid grid-cols-3 gap-4  justify-center items-center">
+                  <div className="hidden lg:flex justify-center items-center px-4">
+                     <div id="section2" className="w-full h-auto max-w-6xl bg-black rounded-[30px] p-6">
+                        <p className="text-white text-2xl md:text-4xl font-bold mb-4">Projects</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                               {[
                                  { name: "New Analysis", image: pythonImage.src, description:  (
                                     <>
@@ -132,7 +98,6 @@ function Highlights() {
                                  <div key={index} className="grid justify-center items-center group transition-transform transform hover:scale-105">
                                     <div className = "w-[20vw] h-[50vh] p-2 bg-black rounded-[20px]  transition ease-in-out duration-300 drop-shadow-md group-hover:animate-gradientPulse mt-5">
                                     <div className="w-full h-full bg-no-repeat bg-contain bg-center rounded-[15px] "
-                                          // style={{ backgroundImage: `url(${project.image})` }}
                                           >
                                        <span className="text-4xl font-semibold tracking-wide text-white group-hover:scale-110 transition ease-in-out delay-50 duration-300  ">
                                              {project.name}
@@ -148,10 +113,10 @@ function Highlights() {
                      </div>
                   </div>
                   {/* Third rectangle */}
-                  <div id="section3" className="w-[70vw] h-[60vh] bg-black rounded-[30px] ml-5 pl-6 pt-6 mr-10">
-                     <div>
-                        <p className="text-white text-4xl font-bold mb-4 text-wide">Experience</p>
-                           <div className="grid grid-cols-3 gap-4 min-h-[55vh] justify-center items-center">
+                  <div className="hidden lg:flex justify-center items-center px-4">
+                     <div id="section2" className="w-full max-w-6xl bg-black rounded-[30px] p-6">
+                        <p className="text-white text-2xl md:text-4xl font-bold mb-4">Projects</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                               {[
                                  { company: "Extern", image: pythonImage.src,  time: "Jul 2024 - Sep 2024", role: "Beats by Dre Data Analytics Extern", description: "Performed sentiment analysis and exploratory data analysis on consumer reviews using Python, NLP, and data visualization tools to uncover patterns and provide insights for strategic brand building."
                               },
@@ -173,7 +138,6 @@ function Highlights() {
                                        <p className='text-neutral-400'>_____________________</p>
                                        <div className = "flex flex-row justify-between">
                                           <p className='text-xl font-semibold text-neutral-400'>{project.company}</p>
-                                          {/* <p className='text-xl font-semibold text-neutral-400'>{project.time}</p> */}
                                        </div>
                                        <p className='text-xl font-semibold text-neutral-400 pt-5'>{project.description}</p>
 
@@ -184,24 +148,11 @@ function Highlights() {
                            </div>
                      </div>
                   </div>
-                  {/* Fourth rectangle */}
-                  {/* <div className="w-[88vw] h-[70vh] bg-black rounded-[30px] ml-20 pl-6 pt-6">
-                     <h2 className=" text-white text-4xl font-bold mb-4">Credentials</h2>
-                  </div> */}
-                  {/* Fifth rectangle */}
-                  {/* <div className="w-[88vw] h-[70vh] bg-black rounded-[30px] ml-20 pl-6 pt-6">
-                     <h2 className=" text-white text-4xl font-bold mb-4">About Me</h2>
-                  </div> */}
+
                </div>
             </div>
          </div>
-         {/* <div className= "flex justify-center items-center pb-5">
-               <div className = "flex justify-center items-center space-x-6  w-[10vw] h-[5vh] bg-black rounded-[30px]">
-                  <div className = "size-4 bg-white rounded-[30px] cursor-pointer" onClick={() => scrollToSection('section1')}></div>
-                  <div className = "size-4 bg-white rounded-[30px] cursor-pointer" onClick={() => scrollToSection('section2')}></div>
-                  <div className = "size-4 bg-white rounded-[30px] cursor-pointer" onClick={() => scrollToSection('section3')}></div>
-               </div>
-         </div> */}
+
       </div>
 
 
@@ -210,3 +161,50 @@ function Highlights() {
 }
 
 export default Highlights;
+
+
+         {/* <div className= "flex justify-center items-center pb-5">
+               <div className = "flex justify-center items-center space-x-6  w-[10vw] h-[5vh] bg-black rounded-[30px]">
+                  <div className = "size-4 bg-white rounded-[30px] cursor-pointer" onClick={() => scrollToSection('section1')}></div>
+                  <div className = "size-4 bg-white rounded-[30px] cursor-pointer" onClick={() => scrollToSection('section2')}></div>
+                  <div className = "size-4 bg-white rounded-[30px] cursor-pointer" onClick={() => scrollToSection('section3')}></div>
+               </div>
+         </div> */}                 
+         
+         {/* Fourth rectangle */}
+                  {/* <div className="w-[88vw] h-[70vh] bg-black rounded-[30px] ml-20 pl-6 pt-6">
+                     <h2 className=" text-white text-4xl font-bold mb-4">Credentials</h2>
+                  </div> */}
+                  {/* Fifth rectangle */}
+                  {/* <div className="w-[88vw] h-[70vh] bg-black rounded-[30px] ml-20 pl-6 pt-6">
+                     <h2 className=" text-white text-4xl font-bold mb-4">About Me</h2>
+                  </div> */}
+
+   // function scrollToSection(sectionId: string) {
+   //    const targetSection = document.getElementById(sectionId);
+   //    if (targetSection) {
+   //      targetSection.scrollIntoView({ behavior: 'smooth' });
+   //    }
+   //  }
+    
+    
+
+      // const containerRef = useRef<HTMLDivElement | null>(null);
+    
+      // useEffect(() => {
+      //   const container = containerRef.current;
+    
+      //   if (!container) return;
+    
+      //   const autoScroll = () => {
+      //     container.scrollBy({ left: 2300, behavior: 'smooth' });
+      //   };
+    
+      //   const scrollInterval = setInterval(autoScroll, 3000); // scrolls every 3 seconds
+    
+      //   return () => clearInterval(scrollInterval); // cleanup on unmount
+      // }, []);
+
+                                                {/* <p className='text-xl font-semibold text-neutral-400'>{project.time}</p> */}
+                                          // style={{ backgroundImage: `url(${project.image})` }}
+                              {/* <div className="col-start-6 row-start-2 justify-self-center	"><FaArrowRight color={"white"}size={60}/></div> */}

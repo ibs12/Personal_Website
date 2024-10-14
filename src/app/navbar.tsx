@@ -56,10 +56,29 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    let previousScrollY = window.scrollY;
+  
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+  
+      if (currentScrollY > previousScrollY) {
+        setIsNavVisible(false); // Hide navbar when scrolling down
+      }
+  
+      previousScrollY = currentScrollY;
+    };
+  
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+  
+
   // Function to toggle the navbar's visibility
   const toggleNavVisibility = (): void => {
     setIsNavVisible(!isNavVisible);
   };
+
 
   return (
 

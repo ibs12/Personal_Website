@@ -6,8 +6,10 @@ import Navbar from './navbar';
 import Highlights from './highlights';
 import Projects from './projects';
 import Experience from './experience';
+import ExperienceTypeC from './experienceTypeC';
 import Contact from './contact';
 import { useEffect, useState, RefObject, useRef } from "react";
+import Head from 'next/head';
 
 
 
@@ -47,13 +49,33 @@ export default function App() {
   const ref5 = useRef<HTMLDivElement>(null);
   const isVisible5 = useIsVisible(ref5); 
 
-  
+  const useMediaQuery = (query: string) => {
+    const [matches, setMatches] = React.useState(window.matchMedia(query).matches);
+
+    React.useEffect(() => {
+        const mediaQueryList = window.matchMedia(query);
+        const documentChangeHandler = () => setMatches(mediaQueryList.matches);
+
+        mediaQueryList.addEventListener('change', documentChangeHandler);
+        return () => mediaQueryList.removeEventListener('change', documentChangeHandler);
+    }, [query]);
+
+    return matches;
+};
+const isSmallScreen = useMediaQuery('(max-width: 767px)');
 
 
 
   return (
     
     <div className="App">
+
+      <Head>
+        <title>Ibrahim Allahbukhsh</title>
+        <meta name="description" content="Ibrahim Allahbukhsh's personal website showcasing his experience and skills as a software engineer." />
+        <meta name="keywords" content="software engineer, personal portfolio, personal website" />
+        <meta name="author" content="Ibrahim Allahbukhsh" />
+      </Head>
 
         <Navbar />
         <>
@@ -67,7 +89,7 @@ export default function App() {
           <><Projects /></>
         </div>
         <div ref={ref4} className={`transition-opacity ease-in duration-700 ${isVisible4 ? "opacity-100" : "opacity-0"}`}>
-          <><Experience /></>
+            {isSmallScreen ? <Experience /> : <ExperienceTypeC />}
         </div>
         <div ref={ref5} className={`transition-opacity ease-in duration-700 ${isVisible5 ? "opacity-100" : "opacity-0"}`}>
           <><Contact /></>
