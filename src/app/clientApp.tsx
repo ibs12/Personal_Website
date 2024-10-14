@@ -31,6 +31,9 @@ export default function ClientApp() {
 
   return (
     <div className="App">
+
+
+
       <Navbar />
       <>
         <div ref={ref1} className={`transition-opacity ease-in duration-700 ${isVisible1 ? 'opacity-100' : 'opacity-0'}`}>
