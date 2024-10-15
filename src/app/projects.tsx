@@ -27,7 +27,7 @@ function Projects() {
         {/* First Project Section */}
         <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="space-y-4">
-                <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white  ">
+                <h2 className="Helvetica text-xl md:text-5xl font-semibold tracking-wide text-white  ">
                     Professor Recommender App
                 </h2>
                 <p className="text-neutral-500">______________________________</p>
@@ -68,11 +68,11 @@ function Projects() {
             </div>
             <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="row-span-2 col-span-1">
-                    <div className="w-full h-60 md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${insightPoster.src})` }}></div>
+                    <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${insightPoster.src})` }}></div>
                 </div>
                 <div className="col-span-1 flex flex-col gap-4">
-                    <div className="w-full h-80  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${rateProfessorStats.src})` }}></div>
-                    <div className="w-full h-80  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${recommendedProfessors.src})` }}></div>
+                    <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${rateProfessorStats.src})` }}></div>
+                    <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${recommendedProfessors.src})` }}></div>
                 </div>
             </div>
         </div>
