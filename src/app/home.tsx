@@ -36,7 +36,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div id="about" className="flex flex-col h-screen justify-center items-center relative overflow-hidden px-4">
+      <div id="about" className="flex flex-col min-h-screen  items-center relative overflow-hidden px-4">
         {/* Profile Image and Information */}
         <div className="relative z-10 flex flex-col justify-center items-center text-center w-full">
           <div
@@ -57,40 +57,40 @@ const Home = () => {
         <h1 className=" md:block pt-8 md:pt-20 md:pb-3 px-4 md:px-20 bg-gradient-to-r from-neutral-200 via-slate-400 to-neutral-600 bg-clip-text text-transparent text-3xl md:text-5xl font-bold font-['Helvetica'] text-center">
         Technologies
         </h1>
-      <div className="w-full overflow-visible pb-10">
-         <div className="space-y-8 md:space-y-0 md:space-x-5 py-8 md:py-20 min-w-max">
-            <div className="flex justify-center items-center">
-               <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-12 gap-4 justify-evenly ">
-                  {[
-                  { name: "Python", image: pythonImage.src },
-                  { name: "CSS", image: cssImage.src },
-                  { name: "HTML", image: HTMLImage.src },
-                  { name: "JavaScript", image: JSImage.src },
-                  { name: "React", image: reactImage.src },
-                  { name: "Node.js", image: nodeImage.src },
-                  { name: "Docker", image: dockerImage.src },
-                  { name: "Git", image: gitImage.src },
-                  { name: "MySQL", image: mySQLImage.src },
-                  { name: "Next.js", image: nextJSImage.src },
-                  { name: "Pandas", image: pandasImage.src },
-                  { name: "Tailwind", image: tailWindsImage.src },
-                  ].map((skill, index) => (
-                  <div key={index} className="flex flex-col group items-center transition-transform transform hover:scale-105">
-                     <div className="w-20 h-20 sm:w-24 sm:h-24 p-2 bg-black rounded-[20px] mb-3 transition ease-in-out delay-50 duration-300 drop-shadow-md group-hover:animate-gradientPulse shadow-lg group-hover:shadow-2xl group-hover:translate-y-[-5px] border-2 border-gray-300">
-                        <div
-                        className="w-full h-full bg-no-repeat bg-contain bg-center rounded-[15px] mb-3"
-                        style={{ backgroundImage: `url(${skill.image})` }}
-                        ></div>
-                     </div>
-                     <span className="text-lg sm:text-xl font-semibold tracking-wide text-center text-white group-hover:scale-110 transition ease-in-out delay-50 duration-300 drop-shadow-md">
-                        {skill.name}
-                     </span>
-                  </div>
-                  ))}
-               </div>
-               </div>
-            </div>
-         </div>
+        <div className="w-full overflow-hidden pb-10">
+          <div className="space-y-8 md:space-y-0 md:space-x-5 py-8 md:py-20 min-w-max">
+              <div className="flex justify-center items-center">
+                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-12 gap-4 justify-evenly ">
+                    {[
+                    { name: "Python", image: pythonImage.src },
+                    { name: "CSS", image: cssImage.src },
+                    { name: "HTML", image: HTMLImage.src },
+                    { name: "JavaScript", image: JSImage.src },
+                    { name: "React", image: reactImage.src },
+                    { name: "Node.js", image: nodeImage.src },
+                    { name: "Docker", image: dockerImage.src },
+                    { name: "Git", image: gitImage.src },
+                    { name: "MySQL", image: mySQLImage.src },
+                    { name: "Next.js", image: nextJSImage.src },
+                    { name: "Pandas", image: pandasImage.src },
+                    { name: "Tailwind", image: tailWindsImage.src },
+                    ].map((skill, index) => (
+                    <div key={index} className="flex flex-col group items-center transition-transform transform hover:scale-105">
+                      <div className="w-20 h-20 sm:w-24 sm:h-24 p-2 bg-black rounded-[20px] mb-3 transition ease-in-out delay-50 duration-300 drop-shadow-md group-hover:animate-gradientPulse shadow-lg group-hover:shadow-2xl group-hover:translate-y-[-5px] border-2 border-gray-300">
+                          <div
+                          className="w-full h-full bg-no-repeat bg-contain bg-center rounded-[15px] mb-3"
+                          style={{ backgroundImage: `url(${skill.image})` }}
+                          ></div>
+                      </div>
+                      <span className="text-lg sm:text-xl font-semibold tracking-wide text-center text-white group-hover:scale-110 transition ease-in-out delay-50 duration-300 drop-shadow-md">
+                          {skill.name}
+                      </span>
+                    </div>
+                    ))}
+                </div>
+                </div>
+              </div>
+          </div>
       </div>
 
     </>
