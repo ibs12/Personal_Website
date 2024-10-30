@@ -189,7 +189,7 @@ function Projects() {
                         <div className="text-wrap pr-10">
                         <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
                             <li>Developed a stock prediction app using reinforcement learning with a Deep Q-Network model in Python.</li>
-                            <li>Created a two-step prediction tool allowing users to input a stock symbol and get real-time predictions with a 'buy, hold, sell' recommendation.</li>
+                            <li>Created a two-step prediction tool allowing users to input a stock symbol and get real-time predictions with a &apos;buy, hold or sell&apos; recommendation.</li>
                             <li>Integrated historic financial data from multiple sources to improve prediction accuracy.</li>
                             <li>Simulated a custom stochastic market environment to mimic the randomness of stock market trends.</li>
                             <li>Achieved an average return on investment of 12% on real trades based on model predictions.</li>
