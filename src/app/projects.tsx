@@ -8,9 +8,9 @@ import newsHome from '../../assets/NewsHome.png';
 import trekPoster from '../../assets/TrekPoster.png';
 import recommendedProfessors from '../../assets/RecommendedProfessors.gif';
 import rateProfessorStats from '../../assets/rateProfessorStats.gif';
-import buyTrade from '../../assets/buyTrade.png';
-import sellTrade from '../../assets/sellTrade.png';
-import trade from '../../assets/trade.png';
+import buyTrade from '../../assets/BuyTrade.png';
+import sellTrade from '../../assets/SellTrade.png';
+import trade from '../../assets/Trade.png';
 
 import { FaGithub } from "react-icons/fa";
 import { FaTrello } from "react-icons/fa";
@@ -209,9 +209,6 @@ function Projects() {
                                 <p>Financial Data</p>
                             </div>
                         </div>
-
-
-
 
                         <a href="https://github.com/ibs12/Trade-Recommendation-App" className="flex space-x-2 pl-1">
                             <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500">
