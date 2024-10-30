@@ -8,6 +8,9 @@ import newsHome from '../../assets/NewsHome.png';
 import trekPoster from '../../assets/TrekPoster.png';
 import recommendedProfessors from '../../assets/RecommendedProfessors.gif';
 import rateProfessorStats from '../../assets/rateProfessorStats.gif';
+import buyTrade from '../../assets/buyTrade.png';
+import sellTrade from '../../assets/sellTrade.png';
+import trade from '../../assets/trade.png';
 
 import { FaGithub } from "react-icons/fa";
 import { FaTrello } from "react-icons/fa";
@@ -16,7 +19,7 @@ import { FaTrello } from "react-icons/fa";
 
 function Projects() {
     return (
-<div id="projects" className="bg-black">
+<div id="projects" className="bg-black ">
     <div className="flex justify-center">
         <div className="bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 bg-clip-text text-transparent font-bold text-7xl md:text-9xl pb-10 pt-10">
             Projects
@@ -25,7 +28,7 @@ function Projects() {
 
     <div className="grid grid-cols-1 gap-6 p-4 sm:px-10 md:px-20">
         {/* First Project Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3">
             <div className="space-y-4">
                 <h2 className="Helvetica text-xl md:text-5xl font-semibold tracking-wide text-white  ">
                     Professor Recommender App
@@ -38,7 +41,7 @@ function Projects() {
                         <li>Wrote documentation such as acceptance tests, task tests, react.js guide in detail</li>
                     </ul>
                 </div>
-                <div className="flex flex-wrap space-x-2">
+                <div className="flex flex-wrap gap-2 pb-3">
                     <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
                         <p>React</p>
                     </div>
@@ -79,7 +82,7 @@ function Projects() {
 
 
                 {/* Second Project Section */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
                     <div className="space-y-4">
                         <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white">Trek</h2>
                         <p className="text-neutral-500">______________________________</p>
@@ -95,7 +98,7 @@ function Projects() {
                                 Trek provides all the tools to make hiking more social, accessible, and enjoyable for everyone.
                             </p>
                         </div>
-                        <div className="flex flex-wrap space-x-2">
+                        <div className="flex flex-wrap gap-2 pb-3">
                             {["React", "JavaScript", "Swagger"].map((tech) => (
                                 <div key={tech} className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500 text-center font-semibold text-black">
                                     <p>{tech}</p>
@@ -129,7 +132,7 @@ function Projects() {
                 </div>
 
                 {/* Third Project Section */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     <div className="space-y-4">
                         <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white">News Analysis</h2>
                         <p className="text-neutral-500">______________________________</p>
@@ -140,7 +143,7 @@ function Projects() {
                             <li>Used News API to obtain the latest news articles, Cheerio to scrape new articles, and BERT for sentiment analysis</li>
                         </ul>
                         </div>
-                        <div className="flex flex-wrap space-x-2">
+                        <div className="flex flex-wrap gap-2 pb-3">
                             <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
                                 <p>React</p>
                             </div>
@@ -172,13 +175,62 @@ function Projects() {
                             <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsHome.src})` }}></div>
                         </div>
                         <div className=" col-span-1 flex flex-col gap-4">
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsMarket.src})` }}></div>
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsSearch.src})` }}></div>
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-white bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsMarket.src})` }}></div>
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-white bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsSearch.src})` }}></div>
                         </div>
                     </div>
                 </div>
 
-                {/* Second Project Section */}
+                {/* Fourth Project Section */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <div className="space-y-4">
+                        <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white text-wrap">Reinforcement Learning Stock Trade Recommendation App</h2>
+                        <p className="text-neutral-500">______________________________</p>
+                        <div className="text-wrap pr-10">
+                        <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
+                            <li>Developed a stock prediction app using reinforcement learning with a Deep Q-Network model in Python.</li>
+                            <li>Created a two-step prediction tool allowing users to input a stock symbol and get real-time predictions with a 'buy, hold, sell' recommendation.</li>
+                            <li>Integrated historic financial data from multiple sources to improve prediction accuracy.</li>
+                            <li>Simulated a custom stochastic market environment to mimic the randomness of stock market trends.</li>
+                            <li>Achieved an average return on investment of 12% on real trades based on model predictions.</li>
+                        </ul>
+                        </div>
+                        <div className="flex flex-wrap gap-2 pb-3">
+                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                                <p>Python</p>
+                            </div>
+                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                                <p>Reinforcement Learning</p>
+                            </div>
+                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                                <p>Deep Q-Network</p>
+                            </div>
+                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                                <p>Financial Data</p>
+                            </div>
+                        </div>
+
+
+
+
+                        <a href="https://github.com/ibs12/Trade-Recommendation-App" className="flex space-x-2 pl-1">
+                            <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500">
+                                <FaGithub size={40} color={"black"}/>
+                            </div>
+                            <p className="text-white font-semibold content-center">Github</p>
+                        </a>
+                    </div>
+
+                    <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div className="row-span-2 col-span-1">
+                            <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${trade.src})` }}></div>
+                        </div>
+                        <div className=" col-span-1 flex flex-col gap-4">
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-white  bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${buyTrade.src})` }}></div>
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${sellTrade.src})` }}></div>
+                        </div>
+                    </div>
+                </div>
 
                 {/* Third Project Section */}
 
@@ -190,3 +242,4 @@ function Projects() {
 }
 
 export default Projects;
+

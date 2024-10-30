@@ -17,10 +17,11 @@ import pandasImage from "../../assets/pandas_mark.svg";
 import tailWindsImage from "../../assets/tailwindcssLogo.svg";
 
 const Home = () => {
+  
   return (
     <>
       {/* Starfield Background */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute  inset-0 z-0  overflow-hidden">
           <StarField />
       </div>
 
@@ -36,7 +37,7 @@ const Home = () => {
       </div>
 
       {/* About Section */}
-      <div id="about" className="flex flex-col min-h-screen  items-center relative overflow-hidden px-4">
+      <div id="about" className="flex flex-col min-h-screen items-center relative overflow-hidden px-4">
         {/* Profile Image and Information */}
         <div className="relative z-10 flex flex-col justify-center items-center text-center w-full">
           <div
@@ -54,13 +55,13 @@ const Home = () => {
             My work spans from developing web apps to leveraging data for insightful analytics, with a focus on clean, scalable solutions. I thrive in collaborative environments and am always eager to learn and contribute to innovative projects. Let’s connect and explore how I can bring value to your team!
           </p>
         </div>
-        <h1 className=" md:block pt-8 md:pt-20 md:pb-3 px-4 md:px-20 bg-gradient-to-r from-neutral-200 via-slate-400 to-neutral-600 bg-clip-text text-transparent text-3xl md:text-5xl font-bold font-['Helvetica'] text-center">
+        <h1 className="md:block pt-8 md:pt-20 md:pb-3 px-4 md:px-20 bg-gradient-to-r from-neutral-200 via-slate-400 to-neutral-600 bg-clip-text text-transparent text-3xl md:text-5xl font-bold font-['Helvetica'] text-center">
         Technologies
         </h1>
         <div className="w-full overflow-hidden pb-10">
           <div className="space-y-8 md:space-y-0 md:space-x-5 py-8 md:py-20 min-w-max">
-              <div className="flex justify-center items-center">
-                <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-12 gap-4 justify-evenly ">
+              <div className="flex justify-center items-center flex-wrap">
+                <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-4 justify-items-center items-center">
                     {[
                     { name: "Python", image: pythonImage.src },
                     { name: "CSS", image: cssImage.src },
