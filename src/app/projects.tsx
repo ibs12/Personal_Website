@@ -70,10 +70,10 @@ function Projects() {
                 </div>
             </div>
             <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="row-span-2 col-span-1">
+                <div className="flex col-span-1  justify-center items-center">
                     <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${insightPoster.src})` }}></div>
                 </div>
-                <div className="col-span-1 flex flex-col gap-4">
+                <div className="col-span-1 flex flex-col gap-4  justify-center items-center">
                     <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${rateProfessorStats.src})` }}></div>
                     <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${recommendedProfessors.src})` }}></div>
                 </div>
@@ -121,12 +121,12 @@ function Projects() {
                         </div>
                     </div>
                     <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className=" col-span-1">
+                        <div className="flex col-span-1  justify-center items-center">
                             <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-[#405644] bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${trekPoster.src})` }}></div>
                         </div>
-                        <div className=" col-span-1 flex flex-col space-y-5">
+                        <div className=" col-span-1 flex flex-col space-y-5  justify-center items-center">
                             <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${hikeLogin.src})` }}></div>
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${hikeGallery.src})` }}></div>
+                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-contain bg-top rounded-[20px]" style={{ backgroundImage: `url(${hikeGallery.src})` }}></div>
                         </div>
                     </div>
                 </div>
@@ -171,10 +171,10 @@ function Projects() {
                     </div>
 
                     <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="row-span-2 col-span-1">
+                        <div className="flex col-span-1 justify-center items-center">
                             <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsHome.src})` }}></div>
                         </div>
-                        <div className=" col-span-1 flex flex-col gap-4">
+                        <div className=" col-span-1 flex flex-col gap-4  justify-center items-center">
                             <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-white bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsMarket.src})` }}></div>
                             <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-white bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsSearch.src})` }}></div>
                         </div>
@@ -219,18 +219,15 @@ function Projects() {
                     </div>
 
                     <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="row-span-2 col-span-1">
+                        <div className="flex col-span-1  justify-center items-center">
                             <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${trade.src})` }}></div>
                         </div>
-                        <div className=" col-span-1 flex flex-col gap-4">
+                        <div className=" col-span-1 flex flex-col gap-4  justify-center items-center">
                             <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-white  bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${buyTrade.src})` }}></div>
                             <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${sellTrade.src})` }}></div>
                         </div>
                     </div>
                 </div>
-
-                {/* Third Project Section */}
-
 
             </div>
         </div>
