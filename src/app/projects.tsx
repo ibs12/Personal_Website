@@ -12,6 +12,11 @@ import buyTrade from '../../assets/BuyTrade.png';
 import sellTrade from '../../assets/SellTrade.png';
 import trade from '../../assets/Trade.png';
 
+import personalDevelopmentThumbnail from '../../assets/Personal-Development-Thumbnail-Image.png';
+import personalDevelopmentAction from '../../assets/Personal-Development-Action-Steps.png';
+import personalDevelopmentExample from '../../assets/Personal-Development-Examples.png';
+
+
 import { FaGithub } from "react-icons/fa";
 import { FaTrello } from "react-icons/fa";
 
@@ -19,218 +24,270 @@ import { FaTrello } from "react-icons/fa";
 
 function Projects() {
     return (
-<div id="projects" className="bg-black ">
-    <div className="flex justify-center">
-        <div className="bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 bg-clip-text text-transparent font-bold text-7xl md:text-9xl pb-10 pt-10">
+    <div id="projects" className="bg-black ">
+        <div className="flex justify-center">
+        <div className="bg-gradient-to-r from-blue-700 via-purple-500 via-50% to-red-500 to-100% bg-clip-text text-transparent font-bold text-7xl md:text-9xl pb-10">
             Projects
         </div>
-    </div>
 
-    <div className="grid grid-cols-1 gap-6 p-4 sm:px-10 md:px-20">
-        {/* First Project Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-3">
-            <div className="space-y-4">
-                <h2 className="Helvetica text-xl md:text-5xl font-semibold tracking-wide text-white  ">
-                    Professor Recommender App
-                </h2>
-                <p className="text-neutral-500">______________________________</p>
-                <div className="text-wrap pr-10">
+
+        </div>
+
+        <div className="grid grid-cols-1 gap-6 p-4 sm:px-10 md:px-20">
+            {/* First Project Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-3">
+                <div className="space-y-4">
+                    <h2 className="Helvetica text-xl md:text-5xl font-semibold tracking-wide text-white  ">
+                        Professor Recommender App
+                    </h2>
+                    <p className="text-neutral-500">______________________________</p>
+                    <div className="text-wrap pr-10">
+                        <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
+                            <li>Used agile methodology to create a web application for college students to rate professors and receive recommendations based on their learning styles as part of a Software Engineering course.</li>
+                            <li>Professor teaching styles are updated in MySQL database in real time as more reviews of a professor are given.</li>
+                            <li>Wrote documentation such as acceptance tests, task tests, react.js guide in detail</li>
+                        </ul>
+                    </div>
+                    <div className="flex flex-wrap gap-2 pb-3">
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>React</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>JavaScript</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>MySQL</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap space-x-2 md:pl-1 pb-4">
+                        <a href="https://github.com/ibs12/rate-professors-app" className="flex items-center space-x-2 pl-1">
+                            <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
+                                <FaGithub size={40} color={"black"} />
+                            </div>
+                            <p className="text-white font-semibold content-center pr-3">Github</p>
+                        </a>
+
+                        <div className="rounded-[10px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
+                            <FaTrello size={40} color={"black"}/>
+                        </div>
+                        <p className="text-white font-semibold content-center">Trello</p>
+                    </div>
+                </div>
+                <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex col-span-1  justify-center items-center">
+                        <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${insightPoster.src})` }}></div>
+                    </div>
+                    <div className="col-span-1 flex flex-col gap-4  justify-center items-center">
+                        <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${rateProfessorStats.src})` }}></div>
+                        <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${recommendedProfessors.src})` }}></div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Second Project Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                <div className="space-y-4">
+                    <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white">Trek</h2>
+                    <p className="text-neutral-500">______________________________</p>
+                    <div className="text-wrap pr-10">
+                        <p className="Helvetica text-lg md:text-xl font-semibold tracking-wide text-white">
+                            Trek is a place where nature lovers will be able to gather to plan and share hiking trips.
+                            Users can engage with two main sections: the &quot;gallery page&quot; and the &quot;hikes page&quot;.
+                            The &quot;gallery page&quot; is a feed that allows users to post pictures/descriptions relating to hikes they are on/have been on,
+                            and other users can interact with these posts (like/comment). The &quot;hikes page&quot; is a feed dedicated to posting/planning
+                            hikes. On this page, posts would include the location where the user is planning to take the hike,
+                            a description, tags that specify which type of hike it is, and the level of difficulty.
+                            Whether You&apos;re seeking inspiration from breathtaking photos or organizing your next adventure,
+                            Trek provides all the tools to make hiking more social, accessible, and enjoyable for everyone.
+                        </p>
+                    </div>
+                    <div className="flex flex-wrap gap-2 pb-3">
+                        {["React", "JavaScript", "Swagger"].map((tech) => (
+                            <div key={tech} className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500 text-center font-semibold text-black">
+                                <p>{tech}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="flex flex-wrap space-x-2 pl-1">
+                        <a href="https://github.com/ibs12/Hiking-Social-Media-App" className="flex space-x-2 pl-1">
+                            <div className="rounded-[30px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500">
+                                <FaGithub size={40} color={"black"} />
+                            </div>
+                            <p className="text-white font-semibold content-center pr-3">Github</p>
+                        </a>
+                        <a href="https://github.com/ibs12/Hiking-Social-Media-App" className="flex space-x-2 pl-1">
+                            <div className="rounded-[10px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500">
+                                <FaTrello size={40} color={"black"} />
+                            </div>
+                            <p className="text-white font-semibold content-center">Trello</p>
+                        </a>
+                    </div>
+                </div>
+                <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex col-span-1  justify-center items-center">
+                        <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-[#405644] bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${trekPoster.src})` }}></div>
+                    </div>
+                    <div className=" col-span-1 flex flex-col space-y-5  justify-center items-center">
+                        <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${hikeLogin.src})` }}></div>
+                        <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-contain bg-top rounded-[20px]" style={{ backgroundImage: `url(${hikeGallery.src})` }}></div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Third Project Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div className="space-y-4">
+                    <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white">News Analysis</h2>
+                    <p className="text-neutral-500">______________________________</p>
+                    <div className="text-wrap pr-10">
                     <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
-                        <li>Used agile methodology to create a web application for college students to rate professors and receive recommendations based on their learning styles as part of a Software Engineering course.</li>
-                        <li>Professor teaching styles are updated in MySQL database in real time as more reviews of a professor are given.</li>
-                        <li>Wrote documentation such as acceptance tests, task tests, react.js guide in detail</li>
+                        <li>Engineered a project to help users discern the truth in the news by providing a comprehensive analysis of articles on specific events.</li>
+                        <li>Utilized NLP to detect biases, summarize content, analyze sentiment to present diverse perspectives, enabling users to make informed decisions.</li>
+                        <li>Used News API to obtain the latest news articles, Cheerio to scrape new articles, and BERT for sentiment analysis</li>
                     </ul>
-                </div>
-                <div className="flex flex-wrap gap-2 pb-3">
-                    <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
-                        <p>React</p>
                     </div>
-                    <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
-                        <p>JavaScript</p>
-                    </div>
-                    <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
-                        <p>MySQL</p>
-                    </div>
-                    <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
-                        <p>PHP</p>
-                    </div>
-                </div>
-                <div className="flex flex-wrap space-x-2 md:pl-1 pb-4">
-                    <a href="https://github.com/ibs12/rate-professors-app" className="flex items-center space-x-2 pl-1">
-                        <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
-                            <FaGithub size={40} color={"black"} />
+                    <div className="flex flex-wrap gap-2 pb-3">
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                            <p>React</p>
                         </div>
-                        <p className="text-white font-semibold content-center pr-3">Github</p>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                            <p>JavaScript</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                            <p>Python</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                            <p>PostgreSQL</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black mt-2 md:mt-0">
+                            <p>Flask</p>
+                        </div>
+                    </div>
+
+
+                    <a href="https://github.com/ibs12/News-Analysis" className="flex space-x-2 pl-1">
+                        <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500">
+                            <FaGithub size={40} color={"black"}/>
+                        </div>
+                        <p className="text-white font-semibold content-center">Github</p>
                     </a>
+                </div>
 
-                    <div className="rounded-[10px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
-                        <FaTrello size={40} color={"black"}/>
+                <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex col-span-1 justify-center items-center">
+                        <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsHome.src})` }}></div>
                     </div>
-                    <p className="text-white font-semibold content-center">Trello</p>
+                    <div className=" col-span-1 flex flex-col gap-4  justify-center items-center">
+                        <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-white bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsMarket.src})` }}></div>
+                        <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-white bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsSearch.src})` }}></div>
+                    </div>
                 </div>
             </div>
-            <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="flex col-span-1  justify-center items-center">
-                    <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${insightPoster.src})` }}></div>
+
+            {/* Fourth Project Section */}
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div className="space-y-4">
+                    <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white text-wrap">Reinforcement Learning Stock Trade Recommendation App</h2>
+                    <p className="text-neutral-500">______________________________</p>
+                    <div className="text-wrap pr-10">
+                    <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
+                        <li>Developed a stock prediction app using reinforcement learning with a Deep Q-Network model in Python.</li>
+                        <li>Created a two-step prediction tool allowing users to input a stock symbol and get real-time predictions with a &apos;buy, hold or sell&apos; recommendation.</li>
+                        <li>Integrated historic financial data from multiple sources to improve prediction accuracy.</li>
+                        <li>Simulated a custom stochastic market environment to mimic the randomness of stock market trends.</li>
+                        <li>Achieved an average return on investment of 12% on real trades based on model predictions.</li>
+                    </ul>
+                    </div>
+                    <div className="flex flex-wrap gap-2 pb-3">
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                            <p>Python</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                            <p>Reinforcement Learning</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                            <p>Deep Q-Network</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
+                            <p>Financial Data</p>
+                        </div>
+                    </div>
+
+                    <a href="https://github.com/ibs12/Trade-Recommendation-App" className="flex space-x-2 pl-1">
+                        <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500">
+                            <FaGithub size={40} color={"black"}/>
+                        </div>
+                        <p className="text-white font-semibold content-center">Github</p>
+                    </a>
                 </div>
-                <div className="col-span-1 flex flex-col gap-4  justify-center items-center">
-                    <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${rateProfessorStats.src})` }}></div>
-                    <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${recommendedProfessors.src})` }}></div>
+
+                <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex col-span-1  justify-center items-center">
+                        <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${trade.src})` }}></div>
+                    </div>
+                    <div className=" col-span-1 flex flex-col gap-4  justify-center items-center">
+                        <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-white  bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${buyTrade.src})` }}></div>
+                        <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${sellTrade.src})` }}></div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-
-                {/* Second Project Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-                    <div className="space-y-4">
-                        <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white">Trek</h2>
-                        <p className="text-neutral-500">______________________________</p>
-                        <div className="text-wrap pr-10">
-                            <p className="Helvetica text-lg md:text-xl font-semibold tracking-wide text-white">
-                                Trek is a place where nature lovers will be able to gather to plan and share hiking trips.
-                                Users can engage with two main sections: the &quot;gallery page&quot; and the &quot;hikes page&quot;.
-                                The &quot;gallery page&quot; is a feed that allows users to post pictures/descriptions relating to hikes they are on/have been on,
-                                and other users can interact with these posts (like/comment). The &quot;hikes page&quot; is a feed dedicated to posting/planning
-                                hikes. On this page, posts would include the location where the user is planning to take the hike,
-                                a description, tags that specify which type of hike it is, and the level of difficulty.
-                                Whether You&apos;re seeking inspiration from breathtaking photos or organizing your next adventure,
-                                Trek provides all the tools to make hiking more social, accessible, and enjoyable for everyone.
-                            </p>
-                        </div>
-                        <div className="flex flex-wrap gap-2 pb-3">
-                            {["React", "JavaScript", "Swagger"].map((tech) => (
-                                <div key={tech} className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500 text-center font-semibold text-black">
-                                    <p>{tech}</p>
-                                </div>
-                            ))}
-                        </div>
-                        <div className="flex flex-wrap space-x-2 pl-1">
-                            <a href="https://github.com/ibs12/Hiking-Social-Media-App" className="flex space-x-2 pl-1">
-                                <div className="rounded-[30px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500">
-                                    <FaGithub size={40} color={"black"} />
-                                </div>
-                                <p className="text-white font-semibold content-center pr-3">Github</p>
-                            </a>
-                            <a href="https://github.com/ibs12/Hiking-Social-Media-App" className="flex space-x-2 pl-1">
-                                <div className="rounded-[10px] bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500">
-                                    <FaTrello size={40} color={"black"} />
-                                </div>
-                                <p className="text-white font-semibold content-center">Trello</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="flex col-span-1  justify-center items-center">
-                            <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-[#405644] bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${trekPoster.src})` }}></div>
-                        </div>
-                        <div className=" col-span-1 flex flex-col space-y-5  justify-center items-center">
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${hikeLogin.src})` }}></div>
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-[#405644] bg-no-repeat bg-contain bg-top rounded-[20px]" style={{ backgroundImage: `url(${hikeGallery.src})` }}></div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Third Project Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <div className="space-y-4">
-                        <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white">News Analysis</h2>
-                        <p className="text-neutral-500">______________________________</p>
-                        <div className="text-wrap pr-10">
+            <div className="grid grid-cols-1 lg:grid-cols-3">
+                <div className="space-y-4">
+                    <h2 className="Helvetica text-xl md:text-5xl font-semibold tracking-wide text-white  ">
+                        Personal Development Video Analyzer
+                    </h2>
+                    <p className="text-neutral-500">______________________________</p>
+                    <div className="text-wrap pr-10">
                         <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
-                            <li>Engineered a project to help users discern the truth in the news by providing a comprehensive analysis of articles on specific events.</li>
-                            <li>Utilized NLP to detect biases, summarize content, analyze sentiment to present diverse perspectives, enabling users to make informed decisions.</li>
-                            <li>Used News API to obtain the latest news articles, Cheerio to scrape new articles, and BERT for sentiment analysis</li>
+                            <li>Engineered custom action extraction module integrating ASR transcription, NLP-based segmentation, and timestamp
+                            mapping to transform unstructured video content into structured, actionable knowledge bases with 98% accuracy.</li>
                         </ul>
-                        </div>
-                        <div className="flex flex-wrap gap-2 pb-3">
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
-                                <p>React</p>
-                            </div>
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
-                                <p>JavaScript</p>
-                            </div>
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
-                                <p>Python</p>
-                            </div>
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
-                                <p>PostgreSQL</p>
-                            </div>
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black mt-2 md:mt-0">
-                                <p>Flask</p>
-                            </div>
-                        </div>
-
-
-                        <a href="https://github.com/ibs12/News-Analysis" className="flex space-x-2 pl-1">
-                            <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500">
-                                <FaGithub size={40} color={"black"}/>
-                            </div>
-                            <p className="text-white font-semibold content-center">Github</p>
-                        </a>
                     </div>
+                    <div className="flex flex-wrap gap-2 pb-3">
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>React</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>JavaScript</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>MySQL</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>PHP</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap space-x-2 md:pl-1 pb-4">
+                        <a href="https://github.com/ibs12/Personal-Development-Video-Analyzer" className="flex items-center space-x-2 pl-1">
+                            <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
+                                <FaGithub size={40} color={"black"} />
+                            </div>
+                            <p className="text-white font-semibold content-center pr-3">Github</p>
+                        </a>
 
-                    <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="flex col-span-1 justify-center items-center">
-                            <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsHome.src})` }}></div>
+                        <div className="rounded-[10px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
+                            <FaTrello size={40} color={"black"}/>
                         </div>
-                        <div className=" col-span-1 flex flex-col gap-4  justify-center items-center">
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-white bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsMarket.src})` }}></div>
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300  bg-no-repeat bg-white bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${newsSearch.src})` }}></div>
-                        </div>
+                        <p className="text-white font-semibold content-center">Trello</p>
                     </div>
                 </div>
-
-                {/* Fourth Project Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    <div className="space-y-4">
-                        <h2 className="Helvetica text-3xl md:text-5xl font-semibold tracking-wide text-white text-wrap">Reinforcement Learning Stock Trade Recommendation App</h2>
-                        <p className="text-neutral-500">______________________________</p>
-                        <div className="text-wrap pr-10">
-                        <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
-                            <li>Developed a stock prediction app using reinforcement learning with a Deep Q-Network model in Python.</li>
-                            <li>Created a two-step prediction tool allowing users to input a stock symbol and get real-time predictions with a &apos;buy, hold or sell&apos; recommendation.</li>
-                            <li>Integrated historic financial data from multiple sources to improve prediction accuracy.</li>
-                            <li>Simulated a custom stochastic market environment to mimic the randomness of stock market trends.</li>
-                            <li>Achieved an average return on investment of 12% on real trades based on model predictions.</li>
-                        </ul>
-                        </div>
-                        <div className="flex flex-wrap gap-2 pb-3">
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
-                                <p>Python</p>
-                            </div>
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
-                                <p>Reinforcement Learning</p>
-                            </div>
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
-                                <p>Deep Q-Network</p>
-                            </div>
-                            <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 text-center font-semibold text-black">
-                                <p>Financial Data</p>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/ibs12/Trade-Recommendation-App" className="flex space-x-2 pl-1">
-                            <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-purple-500 to-red-500">
-                                <FaGithub size={40} color={"black"}/>
-                            </div>
-                            <p className="text-white font-semibold content-center">Github</p>
-                        </a>
+                <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex col-span-1  justify-center items-center">
+                        <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentThumbnail.src})` }}></div>
                     </div>
+                    <div className="col-span-1 flex flex-col gap-4  justify-center items-center">
+                        <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentAction.src})` }}></div>
+                        <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentExample.src})` }}></div>
 
-                    <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="flex col-span-1  justify-center items-center">
-                            <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${trade.src})` }}></div>
-                        </div>
-                        <div className=" col-span-1 flex flex-col gap-4  justify-center items-center">
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-white  bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${buyTrade.src})` }}></div>
-                            <div className="w-full h-[30vh] hover:scale-110 transition ease-in-out delay-20 duration-300 bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${sellTrade.src})` }}></div>
-                        </div>
                     </div>
                 </div>
-
             </div>
+
         </div>
+    </div>
 
     );
 }

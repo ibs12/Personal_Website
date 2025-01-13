@@ -4,9 +4,11 @@
 import React, { useRef } from 'react';
 import Navbar from './navbar';
 import Home from './home';
-import Projects from './projects';
+// import Projects from './projects';
 import Experience from './experience';
 import ExperienceTypeC from './experienceTypeC';
+import ProjectTypeB from './projectTypeB';
+
 import Contact from './contact';
 // import Technologies from './technologies';
 import { useMediaQuery, useIsVisible } from './hooks';
@@ -43,7 +45,7 @@ export default function ClientApp() {
           <Technologies />
         </div> */}
         <div ref={ref3} className={`transition-opacity ease-in duration-700 ${isVisible3 ? 'opacity-100' : 'opacity-0'}`}>
-          <Projects />
+          <ProjectTypeB />
         </div>
         <div ref={ref4} className={`transition-opacity ease-in duration-700 ${isVisible4 ? 'opacity-100' : 'opacity-0'}`}>
           {isSmallScreen ? <Experience /> : <ExperienceTypeC />}

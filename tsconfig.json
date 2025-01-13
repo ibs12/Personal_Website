@@ -21,10 +21,16 @@
       "@/*": ["./src/*"]
     }
 
+
     
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/starField.jsx"],
+
+  
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/starField.jsx", "../../assets/Personal-Development-Analyzer-Video.mp4"
+  ,"custom.d.ts"],
   "exclude": ["node_modules"]
+
+  
   
 }
 
