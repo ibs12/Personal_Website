@@ -135,6 +135,8 @@ interface Media {
           <Image
             src={media[currentIndex].src}
             alt="Gallery"
+            width={1600} 
+            height={1200} 
             className="max-w-full max-h-[80vh] object-contain rounded-xl"
           />
         ) : (
