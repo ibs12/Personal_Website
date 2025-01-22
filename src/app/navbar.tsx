@@ -101,9 +101,6 @@ const Navbar: React.FC = () => {
 
     <>
 
-
-
-
       {/* Arrow for toggling navbar visibility */}
       {!isNavVisible && (
         <button

@@ -26,10 +26,9 @@ function Projects() {
     return (
     <div id="projects" className="bg-black ">
         <div className="flex justify-center">
-        <div className="bg-gradient-to-r from-blue-700 via-purple-500 via-50% to-red-500 to-100% bg-clip-text text-transparent font-bold text-7xl md:text-9xl pb-10">
-            Projects
-        </div>
-
+            <div className="bg-gradient-to-r from-blue-700 via-purple-500 to-red-500 bg-clip-text text-transparent font-bold text-7xl md:text-9xl pb-10 w-full">
+                Projects
+            </div>
 
         </div>
 

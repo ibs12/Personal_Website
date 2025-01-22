@@ -17,7 +17,7 @@ import personalDevelopmentAction from '../../assets/Personal-Development-Action-
 
 import personalDevelopmentGif from '../../assets/Personal-Development-Example-Gif.gif';
 
-
+import Image from 'next/image';
 import React, { useState } from 'react';
 import { FaGithub, FaTrello, FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
 
@@ -130,9 +130,9 @@ interface Media {
     onNext,
   }) => (
     <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center" onClick={onClose}>
-      <div className="relative max-w-4xl max-h-[80vh]" onClick={(e) => e.stopPropagation()}>
+      <div className="relative max-w-7xl max-h-[80vh]" onClick={(e) => e.stopPropagation()}>
         {media[currentIndex].type === "image" ? (
-          <img
+          <Image
             src={media[currentIndex].src}
             alt="Gallery"
             className="max-w-full max-h-[80vh] object-contain rounded-xl"
@@ -209,7 +209,7 @@ interface Media {
         description: "Web application for college students to rate professors and receive recommendations based on their learning styles.",
         skills: ["React", "JavaScript", "MySQL", "PHP"],
         github: "https://github.com/ibs12/rate-professors-app",
-        trello: "#",
+        // trello: "#",
         // images: [rateProfessorStats.src, insightPoster.src, recommendedProfessors.src],
         media: [
             { type: "image", src: rateProfessorStats.src },
@@ -222,7 +222,7 @@ interface Media {
         description: "Social platform for hikers to share experiences and plan hiking trips with interactive galleries and trip planning features.",
         skills: ["React", "JavaScript", "Swagger"],
         github: "https://github.com/ibs12/Hiking-Social-Media-App",
-        trello: "#",
+        // trello: "#",
         // images: [hikeGallery.src, hikeLogin.src,trekPoster.src ],
         media: [
             { type: "image", src: hikeGallery.src},
@@ -259,7 +259,7 @@ interface Media {
         description: "Custom action extraction module integrating ASR transcription and NLP-based segmentation for video content analysis.",
         skills: ["React", "JavaScript", "MySQL", "PHP"],
         github: "https://github.com/ibs12/Personal-Development-Video-Analyzer",
-        trello: "#",
+        // trello: "#",
         // images: [personalDevelopmentGif.src, personalDevelopmentThumbnail.src, personalDevelopmentAction.src],
         media: [
             { type: "image", src: personalDevelopmentGif.src },

@@ -22,9 +22,9 @@ function Experience() {
             logoUrl: externLogo,
             period: "Jul 2024 - Sep 2024",
             responsibilities: [
-                <>Developed proficiency in Python and various data science libraries to perform comprehensive <span className="text-white">sentiment analysis on consumer reviews</span>.</>,
-                <>Developed proficiency in <span className="text-white">data visualization</span> tools to present insights that may inform <span className="text-white">strategic brand building</span>.</>,
-                <>Applied exploratory data analysis <span className="text-white">(EDA)</span> techniques to <span className="text-white">uncover underlying patterns and trends in large datasets</span>.</>,
+                <>Developed proficiency in <span className = "text-white">Python</span> and various <span className = "text-white">data science</span> libraries to perform <span className = "text-white">sentiment analysis</span> on <span className = "text-white">1500+ consumer reviews</span> and <span className = "text-white">17 competitor products</span>.</>,
+                <>Applied <span className = "text-white">exploratory data analysis (EDA)</span> techniques to <span className = "text-white">uncover 6 underlying patterns</span> and trends in <span className = "text-white">large datasets</span>.</>,
+                <>Utilized advanced <span className = "text-white">natural language processing</span> tools to interpret and summarize 1500+ consumer reviews.</>,
                 <>Utilized <span className="text-white">advanced natural language processing</span> tools to interpret and summarize customer feedback.</>
             ]
         },
@@ -54,11 +54,12 @@ function Experience() {
     ];
 
     return (
-<div id="experience" className="bg-black min-h-screen px-4 py-12 md:px-8 lg:px-16">
-    <h1 className="text-center text-7xl md:text-9xl lg:text-9xl font-bold pb-6 pt-20 md:pt-16 bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500 bg-clip-text text-transparent ">
-        Experience
-    </h1>
-    <div className="max-w-5xl mx-auto">
+    <div id="experience" className="bg-black min-h-screen px-4 py-12 md:px-8 lg:px-16">
+        <div className="flex justify-center ">
+            <div className = "bg-gradient-to-r from-orange-300 via-yellow-300-500 to-red-500 bg-clip-text text-transparent font-bold text-9xl pb-6 pt-10">Experience</div>
+        </div>
+    
+    <div className="max-w-6xl mx-auto pt-10">
         {experiences.map((exp, index) => (
             <div key={index} className="mb-16 border-l-2 border-gray-600 pl-8">
                 <div className="flex flex-col md:flex-row items-start md:items-center mb-4">

@@ -6,12 +6,13 @@ import Navbar from './navbar';
 import Home from './home';
 // import Projects from './projects';
 import Experience from './experience';
-import ExperienceTypeC from './experienceTypeC';
+// import ExperienceTypeC from './experienceTypeC';
 import ProjectTypeB from './projectTypeB';
 
 import Contact from './contact';
 // import Technologies from './technologies';
-import { useMediaQuery, useIsVisible } from './hooks';
+// import { useMediaQuery, useIsVisible } from './hooks';
+import { useIsVisible } from './hooks';
 
 export default function ClientApp() {
   const ref1 = useRef<HTMLDivElement>(null);
@@ -29,7 +30,7 @@ export default function ClientApp() {
   const ref5 = useRef<HTMLDivElement>(null);
   const isVisible5 = useIsVisible(ref5);
 
-  const isSmallScreen = useMediaQuery('(max-width: 1024px)');
+  // const isSmallScreen = useMediaQuery('(max-width: 1024px)');
 
   return (
     <div className="App">
@@ -48,9 +49,11 @@ export default function ClientApp() {
           <ProjectTypeB />
         </div>
         <div ref={ref4} className={`transition-opacity ease-in duration-700 ${isVisible4 ? 'opacity-100' : 'opacity-0'}`}>
-          {isSmallScreen ? <Experience /> : <ExperienceTypeC />}
+          {/* {isSmallScreen ? <Experience /> : <ExperienceTypeC />} */}
+          <Experience />
         </div>
         <div ref={ref5} className={`transition-opacity ease-in duration-700 ${isVisible5 ? 'opacity-100' : 'opacity-0'}`}>
+          
           <Contact />
         </div>
       </>
