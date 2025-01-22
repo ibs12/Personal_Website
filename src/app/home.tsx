@@ -58,10 +58,10 @@ const Home = () => {
         <h1 className="md:block pt-8 md:pt-20 md:pb-3 px-4 md:px-20 bg-gradient-to-r from-neutral-200 via-slate-400 to-neutral-600 bg-clip-text text-transparent text-3xl md:text-5xl font-bold font-['Helvetica'] text-center">
         Technologies
         </h1>
-        <div className="w-full overflow-hidden pb-10">
-          <div className="space-y-8 md:space-y-0 md:space-x-5 py-8 md:py-20 min-w-max">
+        <div className="w-full overflow-hidden">
+          <div className="space-y-8 md:space-y-0 md:space-x-5 py-8  min-w-max">
               <div className="flex justify-center items-center flex-wrap">
-                <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 xl:grid-cols-12 gap-4 justify-items-center items-center">
+                <div className="grid grid-cols-12 sm:grid-cols-3 lg:grid-cols-6 lg-xl:grid-cols-4 2xl:grid-cols-12  gap-4 justify-items-center items-center ">
                     {[
                     { name: "Python", image: pythonImage.src },
                     { name: "CSS", image: cssImage.src },

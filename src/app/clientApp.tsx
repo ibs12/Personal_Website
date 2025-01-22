@@ -53,7 +53,7 @@ export default function ClientApp() {
           <Experience />
         </div>
         <div ref={ref5} className={`transition-opacity ease-in duration-700 ${isVisible5 ? 'opacity-100' : 'opacity-0'}`}>
-          
+           
           <Contact />
         </div>
       </>

@@ -8,7 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        'lg-xl': { 'max': '1535', 'min': '1280' },  // Custom breakpoint range
 
+      },
       keyframes: {
         gradientPulse: {
           '0%, 100%': {
@@ -36,7 +39,9 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
+
 
 
 // fontFamily: {
