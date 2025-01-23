@@ -34,6 +34,58 @@ function Projects() {
 
         <div className="grid grid-cols-1 gap-6 p-4 sm:px-10 md:px-20">
             {/* First Project Section */}
+
+            <div className="grid grid-cols-1 lg:grid-cols-3">
+                <div className="space-y-4">
+                    <h2 className="Helvetica text-xl md:text-5xl font-semibold tracking-wide text-white  ">
+                        Personal Development Video Analyzer
+                    </h2>
+                    <p className="text-neutral-500">______________________________</p>
+                    <div className="text-wrap pr-10">
+                        <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
+                            <li>Engineered custom action extraction module integrating ASR transcription, NLP-based segmentation, and timestamp
+                            mapping to transform unstructured video content into structured, actionable knowledge bases with 98% accuracy.</li>
+                        </ul>
+                    </div>
+                    <div className="flex flex-wrap gap-2 pb-3">
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>React</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>JavaScript</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>Gemini API</p>
+                        </div>
+                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
+                            <p>Prompt Engineering</p>
+                        </div>
+                    </div>
+                    <div className="flex flex-wrap space-x-2 md:pl-1 pb-4">
+                        <a href="https://github.com/ibs12/Personal-Development-Video-Analyzer" className="flex items-center space-x-2 pl-1">
+                            <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
+                                <FaGithub size={40} color={"black"} />
+                            </div>
+                            <p className="text-white font-semibold content-center pr-3">Github</p>
+                        </a>
+
+                        <div className="rounded-[10px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
+                            <FaTrello size={40} color={"black"}/>
+                        </div>
+                        <p className="text-white font-semibold content-center">Trello</p>
+                    </div>
+                </div>
+                <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="flex col-span-1  justify-center items-center">
+                        <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentThumbnail.src})` }}></div>
+                    </div>
+                    <div className="col-span-1 flex flex-col gap-4  justify-center items-center">
+                        <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentAction.src})` }}></div>
+                        <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentExample.src})` }}></div>
+
+                    </div>
+                </div>
+            </div>
             <div className="grid grid-cols-1 lg:grid-cols-3">
                 <div className="space-y-4">
                     <h2 className="Helvetica text-xl md:text-5xl font-semibold tracking-wide text-white  ">
@@ -233,57 +285,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3">
-                <div className="space-y-4">
-                    <h2 className="Helvetica text-xl md:text-5xl font-semibold tracking-wide text-white  ">
-                        Personal Development Video Analyzer
-                    </h2>
-                    <p className="text-neutral-500">______________________________</p>
-                    <div className="text-wrap pr-10">
-                        <ul className="list-disc Helvetica text-lg md:text-xl font-semibold tracking-wide text-white space-y-5 pl-4 md:pl-0">
-                            <li>Engineered custom action extraction module integrating ASR transcription, NLP-based segmentation, and timestamp
-                            mapping to transform unstructured video content into structured, actionable knowledge bases with 98% accuracy.</li>
-                        </ul>
-                    </div>
-                    <div className="flex flex-wrap gap-2 pb-3">
-                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
-                            <p>React</p>
-                        </div>
-                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
-                            <p>JavaScript</p>
-                        </div>
-                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
-                            <p>MySQL</p>
-                        </div>
-                        <div className="flex justify-center items-center h-7 w-auto px-2 rounded-[8px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600 text-center font-semibold text-black">
-                            <p>PHP</p>
-                        </div>
-                    </div>
-                    <div className="flex flex-wrap space-x-2 md:pl-1 pb-4">
-                        <a href="https://github.com/ibs12/Personal-Development-Video-Analyzer" className="flex items-center space-x-2 pl-1">
-                            <div className="rounded-[30px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
-                                <FaGithub size={40} color={"black"} />
-                            </div>
-                            <p className="text-white font-semibold content-center pr-3">Github</p>
-                        </a>
 
-                        <div className="rounded-[10px] bg-gradient-to-r from-blue-700 via-sky-400 to-red-600">
-                            <FaTrello size={40} color={"black"}/>
-                        </div>
-                        <p className="text-white font-semibold content-center">Trello</p>
-                    </div>
-                </div>
-                <div className="col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex col-span-1  justify-center items-center">
-                        <div className="w-full h-[40vh] md:h-[60vh] hover:scale-110 drop-shadow-md transition ease-in-out delay-20 duration-300 hover:shadow-2xl bg-white bg-no-repeat bg-contain bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentThumbnail.src})` }}></div>
-                    </div>
-                    <div className="col-span-1 flex flex-col gap-4  justify-center items-center">
-                        <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentAction.src})` }}></div>
-                        <div className="w-full h-[30vh]  transition ease-in-out delay-20 duration-300 bg-no-repeat bg-cover bg-center rounded-[20px]" style={{ backgroundImage: `url(${personalDevelopmentExample.src})` }}></div>
-
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>

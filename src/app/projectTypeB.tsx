@@ -206,6 +206,20 @@ interface Media {
     };
   
     const projects: Project[] = [
+
+      {
+        title: "Personal Development Video Analyzer",
+        description: "Custom action extraction module integrating ASR transcription and NLP-based segmentation for video content analysis.",
+        skills: ["React", "JavaScript", "Python", "Flask", "Gemini API", "Prompt Engineering"],
+        github: "https://github.com/ibs12/Personal-Development-Video-Analyzer",
+        // trello: "#",
+        // images: [personalDevelopmentGif.src, personalDevelopmentThumbnail.src, personalDevelopmentAction.src],
+        media: [
+            { type: "image", src: personalDevelopmentGif.src },
+            { type: "image", src: personalDevelopmentThumbnail.src },
+            { type: "image", src: personalDevelopmentAction.src}
+          ],
+      },
       {
         title: "Professor Recommender App",
         description: "Web application for college students to rate professors and receive recommendations based on their learning styles.",
@@ -255,20 +269,8 @@ interface Media {
             { type: "image", src: sellTrade.src},
             { type: "image", src: trade.src},
           ],
-      },
-      {
-        title: "Personal Development Video Analyzer",
-        description: "Custom action extraction module integrating ASR transcription and NLP-based segmentation for video content analysis.",
-        skills: ["React", "JavaScript", "MySQL", "PHP"],
-        github: "https://github.com/ibs12/Personal-Development-Video-Analyzer",
-        // trello: "#",
-        // images: [personalDevelopmentGif.src, personalDevelopmentThumbnail.src, personalDevelopmentAction.src],
-        media: [
-            { type: "image", src: personalDevelopmentGif.src },
-            { type: "image", src: personalDevelopmentThumbnail.src },
-            { type: "image", src: personalDevelopmentAction.src}
-          ],
       }
+
     ];
   
     return (
