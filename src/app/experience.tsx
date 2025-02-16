@@ -4,7 +4,7 @@ import Image from 'next/image';
 import externLogo from "../../assets/externhq_logo.jpeg";
 import UBLogo from "../../assets/UBLogo.png";
 import TeslaLogo from "../../assets/TeslaLogo.png";
-
+import CitiLogo from "../../assets/citiredesign.svg"
 
 interface Experience {
     company: string;
@@ -16,6 +16,20 @@ interface Experience {
 
 function Experience() {
     const experiences = [
+        {
+            company: "Citi",
+            role: "Summit Execution Junior Project Analyst",
+            logoUrl: CitiLogo,
+            period: "March 2025 - Present",
+            responsibilities: [
+                <>Used <span className = "text-white">data analytics</span> to support various stages of various projects.</>,
+                <>Supported <span className = "text-white">user acceptance testing (UAT)</span> to validate business changes have been successfully developed</>,
+                <>Tracked general progress, risks, and issues on a daily basis</>,
+                <>Followed-up with project participants to ensure action items from meetings are completed.</>
+            ]
+        },
+
+
         {
             company: "Extern",
             role: "Beats by Dre Consumer Insights Data Analytics Extern",
