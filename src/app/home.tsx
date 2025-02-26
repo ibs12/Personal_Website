@@ -45,7 +45,7 @@ const Home = () => {
             style={{ backgroundImage: `url(${profileImage.src})` }}
           ></div>
           <h1 className="text-3xl sm:text-5xl font-extralight tracking-wide text-white">Ibrahim Allahbuksh</h1>
-          <p className="text-2xl font-semibold sm:text-2xl bg-gradient-to-r from-blue-700 via-purple-500 to-pink-600 bg-clip-text text-transparent pt-1">Software Engineer</p>
+          <p className="text-2xl font-semibold sm:text-2xl bg-gradient-to-r from-blue-700 via-purple-500 to-pink-600 bg-clip-text text-transparent pt-1">Junior Project Analyst @ Citi</p>
 
           {/* Descriptions */}
           <p className="w-11/12 sm:w-2/3 lg:w-1/2 mx-auto text-sm sm:text-lg font-semibold tracking-wide text-[#cdcdcd] pt-6 sm:pt-10">
