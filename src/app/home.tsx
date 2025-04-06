@@ -49,9 +49,9 @@ const Home = () => {
 
           {/* Descriptions */}
           <p className="w-11/12 sm:w-2/3 lg:w-1/2 mx-auto text-sm sm:text-lg font-semibold tracking-wide text-[#cdcdcd] pt-6 sm:pt-10">
-            Data analyst and junior project analyst at Citi’s Treasury department, supporting end-to-end project execution for the Citi Treasury Investments (CTI) group. I work at the intersection of finance and technology—leveraging Python to analyze large datasets, automate data pipelines, and detect data quality issues across critical Treasury operations.          </p>
+            Data analyst and junior project analyst at Citi’s Treasury department, supporting end-to-end project execution for the Citi Treasury Investments (CTI) group. I work at the intersection of finance and technology—leveraging Python to analyze large datasets, automate data workflows, and improve data quality across critical Treasury operations.</p>
           <p className="w-11/12 sm:w-2/3 lg:w-1/2 mx-auto text-sm sm:text-lg font-semibold tracking-wide text-[#cdcdcd] pt-6 sm:pt-10">
-            My role bridges project management and data engineering: tracking project progress, supporting user acceptance testing (UAT), and driving actionable insights through automation and analytics. With a foundation in software engineering and AI, I specialize in designing scalable, data-driven solutions for complex financial systems.          </p>
+            My role bridges project management and data engineering: tracking project progress, supporting user acceptance testing (UAT), and driving actionable insights through automation and analytics. With a foundation in software engineering and AI, I specialize in designing scalable, data-driven solutions for complex financial systems.</p>
         </div>
         <h1 className="md:block pt-8 md:pt-20 md:pb-3 px-4 md:px-20 bg-gradient-to-r from-neutral-200 via-slate-400 to-neutral-600 bg-clip-text text-transparent text-3xl md:text-5xl font-bold font-['Helvetica'] text-center">
         Technologies
